@@ -1,6 +1,5 @@
 From Extraction.L.Datatypes Require Import LBool List.List_nat.
 From Extraction.L Require Import TM.TMEncoding.
-From Undecidability.TM Require Import Util.TM_facts.
 
 Section fix_sig.
   Variable sig : Type.

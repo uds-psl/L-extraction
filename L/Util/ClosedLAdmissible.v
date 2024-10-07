@@ -1,12 +1,5 @@
-From Undecidability.Shared.Libs.PSL Require Import Vectors.
-
 From Coq Require Import Vector List.
-
-From Undecidability.L Require Import L L_facts.
-
-From Extraction.L Require Import LTactics Functions.Eval.
-From Extraction.L.Util Require Import NaryApp.
-
+From Extraction.L Require Import LTactics Functions.Eval Util.NaryApp.
 Notation encNatL := nat_enc.
 
 Import ListNotations.

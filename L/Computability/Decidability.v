@@ -1,5 +1,5 @@
 From Extraction.L Require Export Tactics.LTactics Functions.Encoding Datatypes.LBool.
-From Undecidability.L Require Export L.
+Require Export Undecidability.L.L.
 Import HOAS_Notations.
 
 (* * Definition of L-decidability *)

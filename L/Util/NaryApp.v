@@ -1,6 +1,5 @@
 Require Import Undecidability.L.L Undecidability.L.Util.L_facts.
-Require Import Undecidability.Shared.Libs.PSL.Vectors.Vectors.
-Require Import Vector List.
+Require Import Vector List Lia.
 Import ListNotations.
 Import VectorNotations.
 Import L_Notations.
@@ -65,7 +64,7 @@ Fixpoint many_subst {k} s n (v : Vector.t term k) :=
   | [] => s
   | Vector.cons _ u k v => many_subst (subst s (n + k) u) n v
   end.
-  
+
 Lemma beta_red s t t' : lambda t -> t' == subst s 0 t -> (lam s) t == t'.
 Proof.
   intros [u ->] ->. repeat econstructor.
@@ -88,16 +87,6 @@ Proof.
   induction v in n, s, t |- *.
   - reflexivity.
   - cbn. now rewrite IHv.
-Qed.
-
-Lemma many_subst_many_app (s : term) {k} n (ts v : Vector.t term k) :
-  many_subst (many_app s ts) n v = many_app (many_subst s n v) (Vector.map (fun t => many_subst t n v) ts).
-Proof.
-  induction v in n, s, ts |- *.
-  - cbn. revert ts. apply case0. reflexivity.
-  - cbn. apply (caseS' ts). cbn. intros.  
-    rewrite subst_many_app, IHv. cbn. rewrite many_subst_app. 
-    now rewrite Vector.map_map.
 Qed.
 
 Lemma many_subst_closed (s : term) {k} n (v : Vector.t term k) :

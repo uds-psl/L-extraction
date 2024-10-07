@@ -1,7 +1,7 @@
 Require Import Ascii String.
-From Undecidability.L Require Import Util.L_facts. 
+Require Import Undecidability.L.Util.L_facts. 
 From MetaCoq Require Import Template.All Template.Checker.
-Require Import Undecidability.Shared.Libs.PSL.Base.
+
 Require Import MetaCoq.Utils.bytestring.
 
 Open Scope bs.

@@ -1,4 +1,3 @@
-From Undecidability.L Require Import L.
 From Extraction.L Require Import Tactics.LTactics LBool.
 
 Class eqbClass X (eqb : X -> X -> bool): Type := 
