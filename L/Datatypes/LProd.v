@@ -1,11 +1,7 @@
-From Undecidability.L Require Export L.
+Require Export Undecidability.L.L.
 From Extraction.L Require Export Tactics.LTactics GenEncode.
-
 From Extraction.L.Datatypes Require Import LBool.
-
 From Extraction.L Require Import Functions.EqBool GenEncode.
-(*
-From Undecidability.L Require Import LNat.*)
 
 (* ** Encoding of pairs *)
 

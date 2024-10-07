@@ -1,5 +1,5 @@
 From Extraction.L.Computability Require Export Fixpoints Decidability.
-From Undecidability.L.Computability Require Export Seval.
+Require Export Undecidability.L.Computability.Seval.
 From Extraction.L.Functions Require Export Proc Encoding.
 Import ARS.ARSNotations L_Notations.
 (* * Scott's Theorem *)

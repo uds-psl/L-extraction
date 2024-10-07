@@ -1,8 +1,6 @@
 From Extraction.L.Datatypes Require Import LProd LFinType.
 From Extraction.L Require Import Functions.FinTypeLookup.
-From Extraction.L Require Import TM.TapeFuns TM.TMEncoding.
-
-From Undecidability.TM Require Import TM_facts.
+From Extraction.L Require Export TM.TapeFuns TM.TMEncoding.
 
 Local Notation L := TM.Lmove.
 Local Notation R := TM.Rmove.

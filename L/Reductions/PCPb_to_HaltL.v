@@ -1,7 +1,7 @@
 Set Default Goal Selector "!".
 
 From Undecidability.Synthetic Require Import Definitions EnumerabilityFacts ListEnumerabilityFacts.
-From Undecidability Require Export PCP.PCP.
+Require Export Undecidability.PCP.PCP.
 Require Import Lia.
 
 From Extraction.L Require Import LProd LBool LNat LOptions.
@@ -129,7 +129,7 @@ Proof.
   exact _.
 Qed.
 
-From Undecidability Require Import PCP.
+Import Undecidability.PCP.PCP.
 
 Fixpoint tau1' (A : list (list bool * list bool)) : list bool :=
   match A with

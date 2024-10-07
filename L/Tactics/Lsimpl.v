@@ -1,4 +1,4 @@
-From Undecidability.L Require Export Util.L_facts.
+Require Export Undecidability.L.Util.L_facts.
 From Extraction.L.Tactics Require Import Lproc Lbeta Lrewrite Reflection.
 Require Import ListTactics.
 Import L_Notations.

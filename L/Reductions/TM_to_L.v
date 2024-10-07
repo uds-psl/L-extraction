@@ -1,5 +1,4 @@
 From Extraction Require Import TM.TMEncoding TM.TMinL.
-From Undecidability Require Import TM.Util.TM_facts.
 From Extraction.L Require Import Computability.MuRec.
 Require Import Undecidability.Synthetic.Definitions.
 

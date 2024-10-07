@@ -1,7 +1,5 @@
-From Extraction.L.Datatypes Require Import LVector.
-From Extraction.L Require Import Functions.EqBool.
-From Undecidability.TM.Util Require Import TM_facts.
-From Extraction.L.Tactics Require Import LTactics GenEncode.
+Require Export Undecidability.TM.Util.TM_facts.
+From Extraction.L Require Import Datatypes.LVector Functions.EqBool Tactics.LTactics Tactics.GenEncode.
 
 Import L_Notations.
 

@@ -1,8 +1,5 @@
 From Extraction.L.Datatypes Require Import LOptions.
 From Extraction.L Require Import Computability.MuRec.
-
-From Undecidability.TM Require Import TM_facts.
-
 Require Import Extraction.L.TM.TMinL.TMinL_extract.
 
 Definition Halt' (Sigma : finType) n (M: TM Sigma n) (start: mconfig Sigma (state M) n) :=
